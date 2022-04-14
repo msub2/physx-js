@@ -13,6 +13,7 @@
   "scripts": {
     "generate": "docker run --rm -v $(pwd):/src trzeci/emscripten ./generate.sh",
     "make": "docker run --rm -v $(pwd):/src trzeci/emscripten ./make.sh",
+    "make-debug": "docker run --rm -v $(pwd):/src trzeci/emscripten ./make-debug.sh",
     "clean": "docker run --rm -v $(pwd):/src trzeci/emscripten ./clean.sh",
     "shell": "docker run --rm -it -v $(pwd):/src trzeci/emscripten /bin/bash",
     "prep-examples": "./prep-examples.sh"
